@@ -1,0 +1,167 @@
+body{
+  background-image: url(../images/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 30px;
+}
+
+/* ################# header ################# */
+
+header{
+  position: relative;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+.logo{
+  position: relative;
+  left: 2%;
+}
+
+
+.line{
+  position: absolute;
+  border: none;
+  height: 2px;
+  right: 55%;
+  width: 35%;
+  top:50%;
+  background-color: #ffffff1a;
+}
+
+
+
+.nav{
+  position: absolute;
+  display: inline-block;
+  width: 55%;
+  height: 75px;
+  top: 50%;
+  -webkit-backdrop-filter : blur(5px);
+  backdrop-filter : blur(5px);
+  right : 0;
+  transform: translateY(-50%);
+  background: #ffffff33;
+}
+
+
+
+
+.nav > li{
+  position: relative;
+  display: inline-block;
+  left: 17%;
+  margin-right: 8%;
+  height: 97%;
+}
+
+.nav > li > a{
+  position: relative;
+  display: block;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav > li:hover{
+    border-bottom: 2px solid white;
+}
+
+
+.nav > .home{
+    border-bottom: 2px solid white;
+}
+
+/* ################# main ################# */
+
+main{
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.greeting{
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 300px;
+  left: 13%;
+}
+
+.greeting:hover{
+  animation-name: blur;
+  animation-duration: 5s;
+}
+
+.greeting > h3{
+  font-size: 20px;
+  line-height: 2;
+}
+
+.greeting > h1{
+  font-size: 120px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.greeting > p{
+  line-height: 1.4;
+}
+
+
+.explore{
+  position: absolute;
+  display: inline-block;
+  right: 13%;
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  border-radius: 150px;
+  background-color: white;
+  bottom: 15vh;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.explore:hover{
+  animation-name: blur;
+  animation-duration: 5s;
+}
+
+
+.explore > h1{
+  position: absolute;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  font-size: 35px;
+}
+/* ################ footer ################# */
+
+.spacing{
+  width: 100%;
+  height: 15vh;
+}
+
+
+/* ################# animation ################# */
+
+
+@keyframes blur {
+  from{
+    filter: blur(0px);
+  }
+
+  to {
+    filter: blur(25px);
+  }
+}
