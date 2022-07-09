@@ -58,7 +58,8 @@ main > div>.image-section > p{
 }
 
 main > div >.image-section:hover{
-  transform: scale(1.2,1.2);
+  animation-name: scale;
+  animation-duration: 2s;
 
 }
 
@@ -70,4 +71,17 @@ main > div >.image-section:hover{
   height: 6vh;
   /* background-color: blue; */
   bottom:0;
+}
+
+
+/* ################ animation ################# */
+
+@keyframes scale{
+  from{
+    transform: scale(1.0,1.0);
+  }
+
+  to{
+    transform: scale(1.2,1.2);
+  }
 }
