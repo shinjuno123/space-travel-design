@@ -1,0 +1,61 @@
+body{
+  background-image: url(../images/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ################# header ################# */
+
+
+
+.nav > .destination{
+    border-bottom: 2px solid white;
+}
+
+/* ################# main ################# */
+
+main{
+  position: absolute;
+  top: 28%;
+  height: fit-content;
+  width: 100%;
+}
+
+.pick-your-destination{
+  height: 200px;
+  -webkit-backdrop-filter : blur(5px);
+  backdrop-filter : blur(5px);
+  background: #ffffff33;
+  font-size: 80px;
+}
+
+.pick-your-destination > h1{
+  position: absolute;
+  display: block;
+  width: fit-content;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+main > div >a> img{
+  width: 12%;
+  margin-left: 10%;
+  margin-top: 64px;
+}
+
+
+main > div >a> img:hover{
+  transform: scale(1.2,1.2);
+
+}
+
+
+/* ################ footer ################# */
+
+.spacing{
+  width: 100%;
+  height: 9vh;
+  /* background-color: blue; */
+  bottom:0;
+}
