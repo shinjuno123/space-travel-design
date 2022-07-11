@@ -23,6 +23,39 @@ main{
 }
 
 
+.previous, .next{
+  display: inline-block;
+  position: absolute;
+  width: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: #ffffff40;
+  color: white;
+  -webkit-backdrop-filter : blur(20px);
+  backdrop-filter : blur(20px);
+  border: none;
+  padding : 70px 0 70px 0;
+}
+
+.previous:hover, .next:hover{
+  border: 1px solid white;
+}
+
+.previous{
+  left:0;
+}
+
+.next{
+  right:0;
+}
+
+span{
+  display: block;
+  font-size: 40px;
+}
+
+
 .information{
   position: relative;
   display: inline-block;
@@ -57,6 +90,7 @@ main{
 
 .description>p{
   position: absolute;
+  height: 100%;
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
