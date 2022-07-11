@@ -4,6 +4,7 @@ body{
   background-size: cover;
   background-attachment:fixed;
   font-family: 'Cormorant SC', serif;
+  overflow-y: hidden;
 }
 /* ################# header ################# */
 
