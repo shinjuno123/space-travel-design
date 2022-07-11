@@ -1,0 +1,107 @@
+body{
+  background-image: url(../images/technology/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  font-family: 'Saira', sans-serif;
+}
+
+
+
+h1{
+  margin:3.5% auto auto 3%;
+  font-size: 40px;
+  font-family: 'Cormorant SC', serif;
+}
+
+
+/* ################## header ########################### */
+
+.nav > .technology{
+    border-bottom: 2px solid white;
+}
+
+
+/* ################## main ########################### */
+
+main{
+  position: relative;
+  width: 80%;
+  left: 10%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-radius: 15px;
+}
+
+.technology-section{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 180px;
+}
+
+.description{
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  /* left: 10%; */
+
+}
+
+.description > p{
+  display: block;
+  height: 60%;
+  margin: 5% auto 0 auto;
+  line-height: 3;
+}
+
+.highlight{
+  display: block;
+  font-size: 30px;
+}
+
+.image{
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  /* right: 10%; */
+  text-align: center;
+}
+
+
+.image > img{
+  display: inline-block;
+  height: 90%;
+}
+
+.image > p{
+  display:block;
+  height: 10%;
+  text-align: center;
+  line-height: 3;
+}
+
+
+
+
+
+
+/*  switch image's position with description's position */
+
+.right{
+  right: 10%;
+}
+
+.left{
+  left : 10%;
+}
+
+/* remove last margin-bottom of crew-prfile */
+
+.last{
+    margin-bottom: 0;
+}

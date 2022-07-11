@@ -5,6 +5,7 @@ body{
 
 header{
   position: relative;
+  font-family: 'Orbitron', sans-serif;
 }
 
 
@@ -51,8 +52,8 @@ a{
 .nav > li{
   position: relative;
   display: inline-block;
-  left: 17%;
-  margin-right: 8%;
+  left: 14%;
+  margin-right: 5%;
   height: 97%;
 }
 
