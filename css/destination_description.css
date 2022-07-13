@@ -3,8 +3,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
-  overflow-x: hidden;
   font-family: 'Saira', sans-serif;
+  /* overflow-x: hidden; */
 }
 /* ################# header ###################### */
 
@@ -15,29 +15,30 @@ body{
 /* ################# main ###################### */
 
 main{
-  position: relative;
-  top: 10vh;
+  position: absolute;
+  top: 25%;
+  overflow-x: hidden;
   /* move this right */
   right:0;
   width: 100%;
-  overflow-x: hidden;
-
+  height: 120%;
 }
 
 
 .previous, .next{
   display: inline-block;
-  position: absolute;
-  width: 70px;
-  top: 50%;
-  transform: translateY(-50%);
+  position: fixed;
+  width: 3%;
+  height: 80%;
+  bottom: 0;
   z-index: 3;
   background-color: #ffffff40;
   color: white;
   -webkit-backdrop-filter : blur(20px);
   backdrop-filter : blur(20px);
   border: none;
-  padding : 70px 0 70px 0;
+  font-size: 19px;
+  font-weight:bold;
 }
 
 .previous:hover, .next:hover{
@@ -88,7 +89,8 @@ span{
   position: absolute;
   display: inline-block;
   width: 30%;
-  height: 100%;
+  /* height: 100%; */
+
 }
 
 .description>p{
@@ -97,7 +99,6 @@ span{
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
-  vertical-align: middle;
   width: fit-content;
   line-height: 3;
   font-size: 15px;
@@ -108,5 +109,33 @@ span{
 .prevent-overflow{
   position: relative;
   width: 400%;
-  overflow-x: hidden;
+  height: 100%;
+}
+
+@media screen and (max-width:1240px) {
+  .image-section{
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .description{
+    position: relative;
+    display: block;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .information{
+    margin-right: -3px;
+  }
+
+  .previous, .next{
+    width: 7%;
+  }
 }
