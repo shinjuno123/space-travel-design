@@ -2,7 +2,7 @@ const prev = document.querySelector('.previous');
 const next = document.querySelector('.next');
 const destination =  new URLSearchParams(location.search).get('destination');
 const destinaionList = ['europa','mars','moon','titan']
-const sleep = (delay) => new Promise((resolve)=>setTimeout(resolve,delay));
+var sleep = (delay) => new Promise((resolve)=>setTimeout(resolve,delay));
 
 async function initialize(){
   prev.disabled = true;

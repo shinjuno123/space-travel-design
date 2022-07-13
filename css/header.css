@@ -1,55 +1,59 @@
-body{
+body {
   color: white;
   padding-top: 30px;
 }
 
-header{
+header {
   position: relative;
   font-family: 'Orbitron', sans-serif;
 }
 
-
-a{
+a {
   text-decoration: none;
 }
 
+.transparent-cover {
+  display: none;
+}
 
+.hambuger-button {
+  display: none;
+}
 
-.logo{
+.mobile-header {
+  display: none;
+}
+
+.logo {
   position: relative;
   left: 2%;
 }
 
-
-.line{
+.line {
   position: absolute;
   border: none;
   height: 2px;
   right: 55%;
   width: 35%;
-  top:50%;
+  top: 50%;
   background-color: #ffffff1a;
 }
 
-
-
-.nav{
+.nav {
   position: absolute;
   display: inline-block;
   width: 55%;
   height: 75px;
   top: 50%;
-  -webkit-backdrop-filter : blur(5px);
-  backdrop-filter : blur(5px);
-  right : 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  right: 0;
   transform: translateY(-50%);
   background: #ffffff33;
+  font-size: 15px;
 }
 
-
-
-
-.nav > li{
+.nav>li {
   position: relative;
   display: inline-block;
   left: 14%;
@@ -57,7 +61,7 @@ a{
   height: 97%;
 }
 
-.nav > li > a{
+.nav>li>a {
   position: relative;
   display: block;
   color: white;
@@ -65,6 +69,78 @@ a{
   transform: translateY(-50%);
 }
 
-.nav > li:hover{
-    border-bottom: 2px solid white;
+.nav>li:hover {
+  border-bottom: 2px solid white;
+}
+
+/* ################### mobile size ################# */
+@media screen and (max-width:1240px) {
+  .hambuger-button {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    right: 3%;
+    background-image: url("../images/shared/icon-hamburger.svg");
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-header>ul>li {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 40px 0 0 0;
+  }
+
+  .mobile-header>ul>li>.btn-close-header {
+    display: block;
+    margin: 0 auto 0 auto;
+    background-image: url('../images/shared/icon-close.svg');
+    width: 20px;
+    height: 21px;
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-header>ul>li>a {
+    display: block;
+    width: fit-content;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .mobile-header>ul>li>a:hover {
+    border-bottom: 3px solid white;
+  }
+}
+
+
+
+@media screen and (max-width:750px){
+  .mobile-header>ul>li>a{
+    font-size: 12px;
+  }
+}
+
+
+
+@media screen and (max-width:550px){
+  .mobile-header>ul>li>a{
+    font-size: 10px;
+  }
 }
