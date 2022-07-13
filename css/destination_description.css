@@ -19,7 +19,8 @@ main{
   top: 10vh;
   /* move this right */
   right:0;
-  width: 400%;
+  width: 100%;
+  overflow-x: hidden;
 
 }
 
@@ -101,4 +102,11 @@ span{
   line-height: 3;
   font-size: 15px;
   margin: auto;
+}
+
+
+.prevent-overflow{
+  position: relative;
+  width: 400%;
+  overflow-x: hidden;
 }

@@ -10,7 +10,7 @@ async function initialize(){
   let index = destinaionList.indexOf(destination) * 100;
   for(var step=0;step<index+1;step++){
     await sleep(2);
-    document.querySelector('main').style.right = step + '%'
+    document.querySelector('.prevent-overflow').style.right = step + '%'
   }
   prev.disabled = false;
   next.disabled = false;
@@ -19,17 +19,17 @@ async function initialize(){
 async function goNext (){
   next.disabled= true;
   prev.disabled = true;
-  let windowPosition = Number(document.querySelector('main').style.right.replace('%',''));
+  let windowPosition = Number(document.querySelector('.prevent-overflow').style.right.replace('%',''));
   console.log(windowPosition);
   if(windowPosition < 300){
     for(var step = 0; step<100 + 1;step++){
       await sleep(4);
-      document.querySelector('main').style.right = String(windowPosition+step) + '%';
+      document.querySelector('.prevent-overflow').style.right = String(windowPosition+step) + '%';
     }
   }else{
     for(var step = 0; step<300+1;step++){
       await sleep(2);
-      document.querySelector('main').style.right = String(windowPosition - step) + '%';
+      document.querySelector('.prevent-overflow').style.right = String(windowPosition - step) + '%';
     }
   }
   next.disabled= false;
@@ -39,16 +39,16 @@ async function goNext (){
 async function goPrev (){
   prev.disabled= true;
   next.disabled= true;
-  let windowPosition = Number(document.querySelector('main').style.right.replace('%',''));
+  let windowPosition = Number(document.querySelector('.prevent-overflow').style.right.replace('%',''));
   if(windowPosition > 0){
     for(var step = 0;step<100 + 1;step++){
       await sleep(4);
-      document.querySelector('main').style.right = String(windowPosition - step) + '%';
+      document.querySelector('.prevent-overflow').style.right = String(windowPosition - step) + '%';
     }
   }else{
     for(var step = 0; step<300+1;step++){
       await sleep(2);
-      document.querySelector('main').style.right = String(windowPosition + step) + '%';
+      document.querySelector('.prevent-overflow').style.right = String(windowPosition + step) + '%';
     }
   }
   prev.disabled= false;
