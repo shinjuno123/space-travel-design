@@ -20,7 +20,6 @@ async function goNext (){
   next.disabled= true;
   prev.disabled = true;
   let windowPosition = Number(document.querySelector('.prevent-overflow').style.right.replace('%',''));
-  console.log(windowPosition);
   if(windowPosition < 300){
     for(var step = 0; step<100 + 1;step++){
       await sleep(4);

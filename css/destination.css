@@ -1,5 +1,5 @@
 body{
-  background-image: url(../images/destination/background-destination-desktop.jpg);
+  background-image: url("../images/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -76,6 +76,12 @@ main > div >.image-section:hover{
 }
 
 /* ############### mobile size ############## */
+
+@media screen and (max-width:1240px) {
+  body{
+    background-image: url("../images/destination/background-destination-tablet.jpg");
+  }
+}
 
 @media screen and (max-width:870px) {
   .pick-your-destination{

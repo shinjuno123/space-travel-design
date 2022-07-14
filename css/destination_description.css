@@ -1,5 +1,5 @@
 body{
-  background-image: url(../images/destination/background-destination-desktop.jpg);
+  background-image: url("../images/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -113,6 +113,14 @@ span{
   position: relative;
   width: 400%;
   height: 100%;
+}
+
+/* ############### mobile size ############## */
+
+@media screen and (max-width:1240px) {
+  body{
+    background-image: url("../images/destination/background-destination-tablet.jpg");
+  }
 }
 
 @media screen and (max-width:1240px) {

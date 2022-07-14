@@ -8,12 +8,9 @@ var sleep = (delay) => new Promise((resolve)=>setTimeout(resolve,delay));
 
 
 async function OpenMobileHeader(event) {
-  console.log("click");
   const height = Math.max(body.scrollHeight, body.offsetHeight,
     html.clientHeight, html.scrollHeight, html.offsetHeight);
-  console.log(window.innerWidth);
   if (window.innerWidth <= 1240) {
-    console.log(height);
     // Transparent cover style
     transparentCvr.style.position = "absolute";
     transparentCvr.style.display = "inline-block";
@@ -60,7 +57,6 @@ function CloseMobileHeader(event) {
 
 
 function Resize(event) {
-  console.log(window.innerWidth);
   if (window.innerWidth > 1240) {
     // transparent cover style
     transparentCvr.style.display = "none";

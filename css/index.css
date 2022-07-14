@@ -1,5 +1,5 @@
 body{
-  background-image: url(../images/home/background-home-desktop.jpg);
+  background-image: url("../images/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -93,6 +93,12 @@ main{
   height: 15vh;
 }
 /* ################# mobile optimization ################# */
+
+@media screen and (max-width:1240px) {
+  body{
+    background-image: url("../images/home/background-home-tablet.jpg");
+  }
+}
 
 @media screen and (max-width:870px) {
   .explore{
