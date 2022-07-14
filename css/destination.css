@@ -75,6 +75,33 @@ main > div >.image-section:hover{
   bottom:0;
 }
 
+/* ############### mobile size ############## */
+
+@media screen and (max-width:870px) {
+  .pick-your-destination{
+    font-size: 60px;
+  }
+}
+
+
+@media screen and (max-width:710px) {
+  .pick-your-destination{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:490px) {
+  .pick-your-destination{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .pick-your-destination{
+    font-size: 20px;
+  }
+}
+
 
 /* ################ animation ################# */
 

@@ -18,10 +18,12 @@ main{
   position: absolute;
   top: 25%;
   overflow-x: hidden;
+  overflow-y: hidden;
   /* move this right */
   right:0;
   width: 100%;
-  height: 120%;
+  height: 130%;
+
 }
 
 
@@ -32,7 +34,6 @@ main{
   height: 40%;
   top: 50%;
   transform: translateY(-50%);
-  /* bottom: 0;   */
   z-index: 3;
   background-color: #ffffff40;
   color: white;
