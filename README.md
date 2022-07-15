@@ -11,6 +11,8 @@ Technique Stack
 - CSS
 - JS
 
+<a href="https://shinjuno123.github.io/CSS-HTML---Space-Travel/destination.html">https://shinjuno123.github.io/CSS-HTML---Space-Travel/destination.html</a>
+
 ## index.html(main page)
 
 ### Desktop
