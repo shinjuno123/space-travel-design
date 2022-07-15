@@ -67,7 +67,7 @@ span{
   position: relative;
   display: inline-block;
   width: 25%;
-  left: -5px;
+  margin-left: -3px;
 }
 
 .image-section{
