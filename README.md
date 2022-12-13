@@ -12,7 +12,7 @@ Technique Stack
 - JS
 
 ### Site URL
-<a href="https://shinjuno123.github.io/CSS-HTML---Space-Travel/index.html">https://shinjuno123.github.io/CSS-HTML---Space-Travel/index.html</a>
+https://shinjuno123.github.io/space-travel-design/
 
 ## index.html(main page)
 
