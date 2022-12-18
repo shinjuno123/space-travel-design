@@ -5,7 +5,7 @@ This site is for people who want space Travel.<br>
 I made this site to utilize HTML and CSS Techniques I learned.<br>
 I also used some JS to give click event.<br>
 
-Technique Stack
+Technical Stack
 
 - HTML
 - CSS
